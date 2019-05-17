@@ -93,7 +93,17 @@
         <p>
           Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони
         </p>
-        <!-- Здесь будет форма -->
+        <form class="check-in-form" action="https://echo.htmlacademy.ru" method="post">
+          <label for="check-in-date-field">Дата</label>
+          <input type="date" name="check-in-date" id="check-in-date-field" placeholder="08.10.2017">
+          <label for="check-in-time-field">Время</label>
+          <input type="time" name="check-in-time" id="check-in-time-field" placeholder="10:00">
+          <label for="check-in-name-field">Ваше имя</label>
+          <input type="text" name="check-in-name" id="check-in-name-field" placeholder="Борода">
+          <label for="check-in-tel-field">Телефон</label>
+          <input type="tel" name="check-in-tel" id="check-in-tel-field" placeholder="+7 123 456-78-90">
+          <button class="button check-in-button" type="submit">Отправить</button>
+        </form>
       </section>
     </main>
     <footer class="page-footer">
