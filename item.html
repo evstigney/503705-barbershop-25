@@ -65,31 +65,44 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div>
+      <div class="page-footer-block page-footer-contacts">
         Барбершоп «Бородинский»<br>
         Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-        <a href="#">Как нас найти?</a><br>
+        <a href="map.html">Как нас найти?</a><br>
         Телефон: +7 (495) 666-02-66
       </div>
-      <div>
+      <div class="page-footer-block page-footer-social">
         <b>Давайте дружить!</b>
-        <ul class="social">
-          <li><a href="#">Мы Вконтакте</a></li>
-          <li><a href="#">Мы в Facebook</a></li>
-          <li><a href="#">Мы в Instagram</a></li>
+        <ul class="social-list">
+          <li class="social-item"><a class="social-button social-vk" href="http://vk.com">Мы Вконтакте</a></li>
+          <li class="social-item"><a class="social-button social-fb" href="http://facebook.com">Мы в Facebook</a></li>
+          <li class="social-item"><a  class="social-button social-inst" href="http://instagram.com">Мы в Instagram</a></li>
         </ul>
       </div>
-      <div>
+      <div class="page-footer-block page-footer-develop">
         <b>Разработано:</b>
-        <a class="button" href="#">HTML Academy</a>
+        <a class="button" href="http://htmlacademy.ru">HTML Academy</a>
       </div>
     </footer>
 
     <section class="modal modal-login">
       <h2>Личный кабинет</h2>
       <p>Введите пожалуйста свой логин и пароль</p>
-      <!-- Здесь будет форма -->
-      <span class="modal-close">x</span>
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+        <label><span class="visually-hidden">Логин</span>
+          <input class="input-field input-login" type="text" name="login" value="Логин">
+        </label>
+        <label><span class="visually-hidden">Пароль</span>
+          <input class="input-field input-password" type="text" name="password" value="Пароль">
+        </label>
+        <label>
+          <input type="checkbox" name="isRemember" checked>
+          Запомните меня
+        </label>
+        <a href="recovery.html">Я забыл пароль!</a>
+        <button class="button login-button" type="submit">Войти</button>
+        <button class="modal-close" type="button"><span class="visually-hidden">Закрыть окно</span></button>
+      </form>
     </section>
   </body>
 </html>
