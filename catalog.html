@@ -26,12 +26,56 @@
       <h1>Средства для ухода</h1>
       <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
-        <li><a href="#">Магазин</a></li>
+        <li><a href="shop.html">Магазин</a></li>
         <li class="breadcrumbs-current"><a>Средства для ухода</a></li>
       </ul>
       <section class="filters">
         <h2 class="visually-hidden">Фильтры товаров</h2>
-        <!-- Здесь будет форма -->
+        <form class="filer-form" action="http://echo.htmlacademy.ru" method="get">
+          <fieldset>
+            <legend>Производители:</legend>
+            <label>
+              <input type="checkbox" name="is-Baxter-of-California" checked>
+              Baxter of California
+            </label>
+            <label>
+              <input type="checkbox" name="is-Mr-Natty">
+              Mr Natty
+            </label>
+            <label>
+              <input type="checkbox" name="is-Suavecito" checked>
+              Suavecito
+            </label>
+            <label>
+              <input type="checkbox" name="is-Malin+Goetz">
+              Malin+Goetz
+            </label>
+            <label>
+              <input type="checkbox" name="is-Murray's">
+              Murray's
+            </label>
+            <label>
+              <input type="checkbox" name="is-American-Crew" checked>
+              American Crew
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Группы товаров:</legend>
+            <label>
+              <input type="radio" name="product-group" value="shaving-accessories">
+              Бритвенные принадлежности
+            </label>
+            <label>
+              <input type="radio" name="product-group" value="care-products" checked>
+              Средства для ухода
+            </label>
+            <label>
+              <input type="radio" name="product-group" value="accessories">
+              Аксессуары
+            </label>
+          </fieldset>
+          <button class="button" type="button">Показать</button>
+        </form>
       </section>
       <section class="variety">
         <h2 class="visually-hidden">Каталог товаров</h2>
