@@ -14,3 +14,36 @@ body {
   background-position: top center;
   background-repeat: no-repeat;
 }
+
+a {
+  text-decoration: none;
+}
+
+.main-nav {
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+
+  background-color: #000000;
+}
+
+.main-menu-list,
+.user-menu-list {
+  list-style: none;
+}
+
+.main-menu-list a,
+.user-menu-list a {
+  color: #ffffff;
+
+  background-color: #000000;
+}
+
+.main-menu-list a:hover,
+.main-menu-list a:focus,
+.main-menu-list a:active,
+.user-menu-list a:hover,
+.user-menu-list a:focus,
+.user-menu-list a:active {
+  background-color: #242424;
+}
