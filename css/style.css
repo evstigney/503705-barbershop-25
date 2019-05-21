@@ -39,6 +39,7 @@ a {
   color: #ffffff;
   text-align: center;
   vertical-align: middle;
+  text-decoration: none;
   text-transform: uppercase;
 
   background-color: #000000;
@@ -211,7 +212,6 @@ a {
 
 .product-price .button {
   color: #ffffff;
-  text-decoration: none;
   text-align: center;
   vertical-align: middle;
 
@@ -309,6 +309,7 @@ a {
 
 .pagination-item a {
   color: #ffffff;
+  text-decoration: none;
 
   background-color: #000000;
 }
@@ -326,6 +327,7 @@ a {
 .pagination-item-current a:focus,
 .pagination-item-current a:active {
   color: #000000;
+  text-decoration: none;
 
   background-color: #ffffff;
 }
