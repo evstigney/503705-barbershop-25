@@ -84,7 +84,7 @@ a {
 
   background-color: #f8f5f2;
   background-image: url("../img/content-bg-20x20.jpg");
-  background-position: top left;
+  background-position: 0 0;
   background-repeat: repeat;
 }
 
@@ -112,6 +112,54 @@ a {
 .check-in input:focus {
   border-color: #663d15;
   outline: none;
+}
+
+.page-footer {
+  color: #ffffff;
+
+  background-color: #212121;
+  background-image: url("../img/footer-bg-20x20.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.page-footer-contacts a {
+  color: #ffffff;
+  text-decoration: underline;
+
+  background-color: #212121;
+}
+
+.page-footer-contacts a:hover,
+.page-footer-contacts a:focus,
+.page-footer-contacts a:active {
+  text-decoration: none;
+}
+
+.page-footer-social {
+  text-align: center;
+}
+
+.social-list {
+  list-style: none;
+}
+
+.social-button {
+  color: #ffffff;
+
+  background-color: #212121;
+}
+
+.page-footer-develop {
+  text-align: center;
+}
+
+.page-footer-develop .button:hover,
+.page-footer-develop .button:focus,
+.page-footer-develop .button:active {
+  color: #000000;
+
+  background-color: #ffffff;
 }
 
 .visually-hidden {
