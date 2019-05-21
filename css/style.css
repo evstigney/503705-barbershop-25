@@ -48,6 +48,19 @@ a {
   background-color: #242424;
 }
 
+.advantages-list {
+  list-style: none;
+}
+
+.advantages-item {
+  text-align: center;
+}
+
+.advantages-item h3 {
+  font-size: 30px;
+  line-height: 42px;
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
