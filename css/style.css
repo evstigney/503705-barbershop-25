@@ -61,6 +61,24 @@ a {
   line-height: 42px;
 }
 
+.content-wrapper {
+  color: #000000;
+
+  background-color: #f8f5f2;
+  background-image: url("../img/content-bg-20x20.jpg");
+  background-position: top left;
+  background-repeat: repeat;
+}
+
+.content-wrapper h2 {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.news-item time {
+  text-transform: none;
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
