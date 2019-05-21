@@ -276,6 +276,33 @@ a {
   background-color: #000000;
 }
 
+.about-info h2 {
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+}
+
+.about-info h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.price-list {
+  color: #000000;
+
+  background-color: #f9f6f3;
+
+  border-collapse: collapse;
+}
+
+.price-list td {
+  border: 2px solid #000000;
+}
+
+.remedies-list {
+  list-style: none;
+}
+
 .pagination-list {
   list-style: none;
 }
