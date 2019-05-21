@@ -162,6 +162,52 @@ a {
   background-color: #ffffff;
 }
 
+.modal {
+  color: #000000;
+
+  background-color: #f8f5f2;
+  background-image: url("../img/content-bg-20x20.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.modal h2 {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.login-form input[type="text"] {
+  font: inherit;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #f9f6f3;
+  border: 2px solid #000000;
+}
+
+.login-form input[type="text"]:hover,
+.login-form input[type="text"]:focus,
+.login-form input[type="text"]:active {
+  border-color: #663d15;
+  outline: none;
+}
+
+.login-checkbox:hover,
+.login-checkbox:focus {
+  color: #663d15;
+}
+
+.recovery {
+  color: #000000;
+  text-decoration: underline;
+}
+
+.recovery:hover,
+.recovery:focus,
+.recovery:active {
+  text-decoration: none;
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
