@@ -15,6 +15,20 @@ body {
   background-repeat: no-repeat;
 }
 
+.inner-page {
+  color: #000000;
+
+  background-color: #f8f5f2;
+  background-image: url("../img/content-bg-20x20.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.inner-shop {
+  font-size: 14px;
+  line-height: 18px;
+}
+
 a {
   text-decoration: none;
 }
