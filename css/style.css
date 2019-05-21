@@ -30,7 +30,7 @@ body {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .button {
@@ -67,6 +67,7 @@ a {
 .main-menu-list a,
 .user-menu-list a {
   color: #ffffff;
+  text-decoration: none;
 
   background-color: #000000;
 }
@@ -78,6 +79,29 @@ a {
 .user-menu-list a:focus,
 .user-menu-list a:active {
   background-color: #242424;
+}
+
+.inner-page h1 {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.breadcrumbs {
+  list-style: none;
+
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.breadcrumbs a {
+  color: #000000;
+  text-decoration: none;
+
+  background-color: #f8f5f2;
+}
+
+.breadcrumbs-current a {
+  color: #aba9a7;
 }
 
 .advantages-list {
@@ -128,6 +152,27 @@ a {
   outline: none;
 }
 
+.product-filters fieldset {
+  border: none;
+}
+
+.product-filters legend {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.product-filters input:hover + label,
+.product-filters input:focus + label {
+  color: #663d15;
+}
+
+.product-filters
+ input:disabled + label {
+  color: #000000;
+
+  opacity: 0.5;
+}
+
 .page-footer {
   color: #ffffff;
 
@@ -139,7 +184,6 @@ a {
 
 .page-footer-contacts a {
   color: #ffffff;
-  text-decoration: underline;
 
   background-color: #212121;
 }
