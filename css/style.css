@@ -32,13 +32,15 @@ body {
 /* ------ РАЗМЕТКА СЕТКИ ----------- */
 
 /* ВСПОМОГАТЕЛЬНЫЕ ФОНЫ */
-.main-nav .layout-positioner > * {
+
+.advantages {
+  outline: 1px solid green;
+}
+
+.advantages-item {
   outline: 1px solid red;
 }
 
-.main-menu-list > * {
-  outline: 1px solid blue;
-}
 
 /* -------- ОСН РАЗМЕТКА СЕТКИ -------- */
 
@@ -53,6 +55,7 @@ body {
   display: flex;
   flex-direction: column-reverse;
   justify-content: flex-end;
+  margin-bottom: 40px;
 }
 
 .layout-logo {
@@ -82,7 +85,18 @@ body {
   padding: 0;
 }
 
+.advantages-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
 
+.advantages-item {
+  width: 300px;
+  margin: 0;
+  padding: 0;
+}
 
 /* -------------- ДЕКОРАТИВНЫЕ ЭЛЕМЕНТЫ ------------ */
 
@@ -219,8 +233,26 @@ a {
 }
 
 .advantages-item h3 {
+  position: relative;
+
+  padding-bottom: 30px;
+
   font-size: 30px;
   line-height: 42px;
+}
+
+.advantages-item h3::after {
+  position: absolute;
+  bottom: 0;
+  left: 140px;
+
+  width: 22px;
+  height: 22px;
+
+  background-color: #ffffff;
+  transform: rotate(45deg);
+
+  content: "";
 }
 
 .content-wrapper {
