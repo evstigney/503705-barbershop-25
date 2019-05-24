@@ -32,14 +32,60 @@ body {
 /* ------ РАЗМЕТКА СЕТКИ ----------- */
 
 /* ВСПОМОГАТЕЛЬНЫЕ ФОНЫ */
+.main-nav .layout-positioner > * {
+  outline: 1px solid red;
+}
 
+.main-menu-list > * {
+  outline: 1px solid blue;
+}
 
+/* -------- ОСН РАЗМЕТКА СЕТКИ -------- */
 
 .layout-positioner {
   width: 940px;
   margin: 0 auto;
   padding: 0 10px;
-  outline: 1px solid yellow;
+  outline: 1px solid yellow; /* ВСПОМОГАТЕЛЬНАЯ РАМКА */
+}
+
+.page-header{
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+}
+
+.layout-logo {
+  display: flex;
+  justify-content: center;
+}
+
+.main-nav {
+  margin-bottom: 60px;
+}
+
+.main-nav .layout-positioner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 70px;
+}
+
+.main-menu-list {
+  display: flex;
+  margin: 0;
+  margin-left: 20px;
+  padding: 0;
+}
+
+.main-menu-item:not(:last-of-type) {
+  margin-right: 40px;
+}
+
+.user-menu-list {
+  margin: 0;
+  margin-right: 20px;
+  padding: 0;
 }
 
 
