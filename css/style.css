@@ -74,17 +74,11 @@ body {
 .main-menu-list {
   display: flex;
   margin: 0;
-  margin-left: 20px;
   padding: 0;
-}
-
-.main-menu-item:not(:last-of-type) {
-  margin-right: 40px;
 }
 
 .user-menu-list {
   margin: 0;
-  margin-right: 20px;
   padding: 0;
 }
 
@@ -128,6 +122,19 @@ a {
   list-style: none;
 }
 
+.main-menu-item,
+.user-menu-item {
+  height: 45px;
+  padding: 0 20px;
+  padding-top: 25px;
+
+  text-align: center;
+}
+
+.user-menu-login {
+  padding-left: 50px;
+}
+
 .main-menu-list a,
 .user-menu-list a {
   color: #ffffff;
@@ -136,12 +143,47 @@ a {
   background-color: #000000;
 }
 
-.main-menu-list a:hover,
-.main-menu-list a:focus,
-.main-menu-list a:active,
-.user-menu-list a:hover,
-.user-menu-list a:focus,
-.user-menu-list a:active {
+.user-menu-login {
+  position: relative;
+}
+
+.user-menu-login:hover::before,
+.user-menu-login:focus::before,
+.user-menu-login:active::before {
+  background-color: #242424;
+  opacity: 1;
+}
+
+.user-menu-login::before {
+  position: absolute;
+  top: 28px;
+  left: 20px;
+
+  display: block;
+  width: 14px;
+  height: 14px;
+
+  background-color: #000000;
+  background-image: url("../img/login-14x14.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+
+  content: "";
+}
+
+.main-menu-item:hover,
+.main-menu-item:focus,
+.main-menu-item:active,
+.main-menu-item:hover a,
+.main-menu-item:focus a,
+.main-menu-item:active a,
+.user-menu-item:hover,
+.user-menu-item:focus,
+.user-menu-item:active,
+.user-menu-item:hover a,
+.user-menu-item:focus a,
+.user-menu-item:active a {
   background-color: #242424;
 }
 
