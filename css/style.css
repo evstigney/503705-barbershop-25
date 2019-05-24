@@ -33,15 +33,13 @@ body {
 
 /* ВСПОМОГАТЕЛЬНЫЕ ФОНЫ */
 
-.advantages {
+.content-wrapper {
   outline: 1px solid green;
 }
 
-.advantages-item {
+.content-wrapper > * {
   outline: 1px solid red;
 }
-
-
 /* -------- ОСН РАЗМЕТКА СЕТКИ -------- */
 
 .layout-positioner {
@@ -89,6 +87,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 0;
+  margin-bottom: 60px;
   padding: 0;
 }
 
@@ -98,6 +97,34 @@ body {
   padding: 0;
 }
 
+.content-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.content-wrapper:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+.content-wrapper .content-section {
+  width: 350px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 60px;
+}
+
+.content-wrapper .content-section:last-of-type {
+  width: 360px;
+  padding-left: 90px;
+}
+
+.photogallery-content {
+  width: 286px;
+  height: 164px;
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0;
+}
 /* -------------- ДЕКОРАТИВНЫЕ ЭЛЕМЕНТЫ ------------ */
 
 a {
@@ -105,8 +132,12 @@ a {
 }
 
 .button {
-  font: inherit;
+  margin: 0;
+  padding: 0;
+  padding: 15px 35px;
 
+  font-size: inherit;
+  line-height: inherit;
   color: #ffffff;
   text-align: center;
   vertical-align: middle;
@@ -117,10 +148,20 @@ a {
   border: none;
 }
 
+button.button {
+  margin: 0;
+  padding: 0;
+  padding: 10px 50px;
+}
+
 .button:hover,
 .button:focus,
 .button:active {
   background-color: #663d15;
+}
+
+.button + .button {
+  margin-left: 20px;
 }
 
 .main-nav {
@@ -265,8 +306,25 @@ a {
 }
 
 .content-wrapper h2 {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+
   font-size: 30px;
   line-height: 42px;
+}
+
+.content-wrapper p {
+  margin: 0;
+  padding: 0;
+}
+
+.news-item {
+  margin-bottom: 20px;
+}
+
+.news-item:last-of-type {
+  margin-bottom:40px;
 }
 
 .news-item time {
