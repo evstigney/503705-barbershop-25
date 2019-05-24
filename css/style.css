@@ -35,6 +35,14 @@ body {
 
 
 
+.layout-positioner {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+  outline: 1px solid yellow;
+}
+
+
 
 /* -------------- ДЕКОРАТИВНЫЕ ЭЛЕМЕНТЫ ------------ */
 
