@@ -29,6 +29,47 @@ body {
   line-height: 18px;
 }
 
+/* ------ РАЗМЕТКА СЕТКИ ----------- */
+
+/* ВСПОМОГАТЕЛЬНЫЕ ФОНЫ */
+
+.layout-positioner > * {
+  outline: 1px solid red;
+}
+
+
+.layout-positioner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 940px;
+  margin: 0 auto;
+  padding: 0px 10px;
+}
+
+.page-header {
+  width: 100%;
+}
+
+.index-main {
+  width: 100%;
+}
+
+.page-footer {
+  width: 100%;
+}
+
+.modal-login {
+  width: 300px;
+  padding: 35px 80px;
+}
+
+.modal-map {
+  width: 780px;
+}
+
+/* -------------- ДЕКОРАТИВНЫЕ ЭЛЕМЕНТЫ ------------ */
+
 a {
   text-decoration: underline;
 }
