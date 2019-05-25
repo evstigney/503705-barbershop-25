@@ -101,37 +101,23 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
+  padding: 50px 80px;
 }
 
-.content-wrapper:not(:last-child) {
-  margin-bottom: 35px;
+.content-section:not(:last-child) {
+  margin-right: 20px;
 }
 
-.content-wrapper .content-section {
-  width: 350px;
-  padding-top: 48px;
-  padding-bottom: 50px;
-  padding-left: 60px;
+.content-section {
+  width: 380px;
 }
 
-.content-wrapper .content-section:last-of-type {
-  width: 360px;
-  padding-left: 90px;
+.content-section:last-child {
+  width: 300px;
+  padding-left: 80px;
 }
 
-.photogallery-content {
-  width: 286px;
-  height: 164px;
-  margin: 0;
-  margin-bottom: 35px;
-  padding: 0;
-}
-
-.button + .button {
-  margin-left: 15px;
-}
-
-.content-wrapper p {
+.content-section p {
   margin: 0;
   padding: 0;
 }
@@ -140,19 +126,20 @@ body {
   margin-bottom: 20px;
 }
 
-.news-item:last-of-type {
-  margin-bottom: 30px;
+.content-section-news .button {
+  margin-top: 10px;
 }
 
-.news-item time {
-  text-transform: none;
-}
-
-.content-contacts p {
+.photogallery-content {
+  height: 164px;
+  margin: 0;
+  margin-bottom: 35px;
   padding: 0;
-  margin-bottom: 20px;
 }
 
+.content-section .button + .button {
+  margin-left: 15px;
+}
 /* -------------- ДЕКОРАТИВНЫЕ ЭЛЕМЕНТЫ ------------ */
 
 a {
