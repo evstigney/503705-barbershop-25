@@ -7,87 +7,94 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body class="inner-page">
+  <body class="inner-page inner-price">
     <header class="page-header">
       <nav class="main-nav">
-        <a href="index.html" tabindex="-1">
-          <img src="img/logo-small-111x24.svg" width="111" height="24" alt="Логотип Барбершопа «Бородинский»">
-        </a>
-        <ul class="main-menu-list">
-          <li class="main-menu-item"><a href="info.html">Информация</a></li>
-          <li class="main-menu-item"><a href="info.html">Новости</a></li>
-          <li class="main-menu-item  main-menu-current"><a>Прайс-лист</a></li>
-          <li class="main-menu-item"><a href="shop.html">Магазин</a></li>
-          <li class="main-menu-item"><a href="contacts.html">Контакты</a></li>
-        </ul>
-        <ul class="user-menu-list">
-          <li class="user-menu-item"><a href="login.html">Вход</a></li>
-        </ul>
+        <div class="layout-positioner">
+          <a class="inner-logo" href="index.html" tabindex="-1">
+            <img src="img/logo-small-111x24.svg" width="111" height="24" alt="Логотип Барбершопа «Бородинский»">
+          </a>
+          <ul class="main-menu-list">
+            <li class="main-menu-item"><a href="info.html">Информация</a></li>
+            <li class="main-menu-item"><a href="info.html">Новости</a></li>
+            <li class="main-menu-item main-menu-current"><a href="price.html">Прайс-лист</a></li>
+            <li class="main-menu-item"><a href="shop.html">Магазин</a></li>
+            <li class="main-menu-item"><a href="contacts.html">Контакты</a></li>
+          </ul>
+          <ul class="user-menu-list">
+            <li class="user-menu-item user-menu-login"><a href="login.html">Вход</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main>
-      <h1>Прайс-лист</h1>
-        <ul class="breadcrumbs">
-          <li><a href="index.html">Главная</a></li>
-          <li class="breadcrumbs-current"><a>Прайс-лист</a></li>
-        </ul>
-      <section class="about-info">
-        <h2>Истинно мужская классика</h2>
-        <section class="about-price">
-          <h3>Цены на услуги наших мастеров:</h3>
-          <table class="price-list">
-            <tr>
-              <td>Стрижка</td>
-              <td>1 500 ₽</td>
-            </tr>
-            <tr>
-              <td>Стрижка бороды</td>
-              <td>500 ₽</td>
-            </tr>
-            <tr>
-              <td>Накрутка усов</td>
-              <td>150 ₽</td>
-            </tr>
-          </table>
-        </section>
-        <section class="about-remedies">
-          <h3>Мы используем только лучшие средства:</h3>
-          <ul class="remedies-list">
-            <li>Baxter of California</li>
-            <li>Mr Natty</li>
-            <li>Suavecito</li>
-            <li>Malin+Goetz</li>
+      <div class="layout-positioner">
+        <h1>Прайс-лист</h1>
+          <ul class="breadcrumbs">
+            <li><a href="index.html">Главная</a></li>
+            <li class="breadcrumbs-current"><a>Прайс-лист</a></li>
           </ul>
+        <section class="about-info">
+          <h2>Истинно мужская классика</h2>
+          <section class="about-price">
+            <h3>Цены на услуги наших мастеров:</h3>
+            <table class="price-list">
+              <tr>
+                <th>Стрижка</th>
+                <td>1 500 ₽</td>
+              </tr>
+              <tr>
+                <th>Стрижка бороды</th>
+                <td>500 ₽</td>
+              </tr>
+              <tr>
+                <th>Накрутка усов</th>
+                <td>150 ₽</td>
+              </tr>
+            </table>
+          </section>
+          <section class="about-remedies">
+            <h3>Мы используем только лучшие средства:</h3>
+            <ul class="remedies-list">
+              <li>Baxter of California</li>
+              <li>Mr Natty</li>
+              <li>Suavecito</li>
+              <li>Malin+Goetz</li>
+            </ul>
+          </section>
+          <section class="about-us">
+            <h3>Несколько слов о нас:</h3>
+            <p>
+              Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникаальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.
+            </p>
+            <p>
+              Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!
+            </p>
+          </section>
         </section>
-        <section class="about-us">
-          <h3>Несколько слов о нас:</h3>
-          <p>
-            Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникаальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.
-          </p>
-          <p>
-            Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!
-          </p>
-        </section>
-      </section>
+      </div>
     </main>
     <footer class="page-footer">
-      <div class="page-footer-block page-footer-contacts">
-        Барбершоп «Бородинский»<br>
-        Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-        <a href="map.html">Как нас найти?</a><br>
-        Телефон: +7 (495) 666-02-66
-      </div>
-      <div class="page-footer-block page-footer-social">
-        <b>Давайте дружить!</b>
-        <ul class="social-list">
-          <li class="social-item"><a class="social-button social-vk" href="http://vk.com">Мы Вконтакте</a></li>
-          <li class="social-item"><a class="social-button social-fb" href="http://facebook.com">Мы в Facebook</a></li>
-          <li class="social-item"><a  class="social-button social-inst" href="http://instagram.com">Мы в Instagram</a></li>
-        </ul>
-      </div>
-      <div class="page-footer-block page-footer-develop">
-        <b>Разработано:</b>
-        <a class="button" href="http://htmlacademy.ru">HTML Academy</a>
+      <div class="page-footer-shadow"></div>
+      <div class="layout-positioner">
+        <div class="page-footer-block page-footer-contacts">
+          Барбершоп «Бородинский»<br>
+          Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+          <a href="map.html">Как нас найти?</a><br>
+          Телефон: +7 (495) 666-02-66
+        </div>
+        <div class="page-footer-block page-footer-social">
+          <b>Давайте дружить!</b>
+          <ul class="social-list">
+            <li class="social-item"><a class="social-button social-vk" href="http://vk.com">Мы Вконтакте</a></li>
+            <li class="social-item"><a class="social-button social-fb" href="http://facebook.com">Мы в Facebook</a></li>
+            <li class="social-item"><a  class="social-button social-inst" href="http://instagram.com">Мы в Instagram</a></li>
+          </ul>
+        </div>
+        <div class="page-footer-block page-footer-develop">
+          <b>Разработано:</b>
+          <a class="button" href="http://htmlacademy.ru">HTML Academy</a>
+        </div>
       </div>
     </footer>
 

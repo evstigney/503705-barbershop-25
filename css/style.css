@@ -45,11 +45,11 @@ body {
   outline: 1px solid yellow;
 }
 
-.product-info-wrapper {
+.about-info {
   outline: 1px solid green;
 }
 
-.product-info > * {
+.about-info > * {
   outline: 1px solid red;
 }
 /* -------- ОСН РАЗМЕТКА СЕТКИ -------- */
@@ -393,6 +393,54 @@ p.product-price {
   content: "";
 }
 
+.about-info {
+  position: relative;
+
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 60px;
+
+  box-shadow: inset 0 4px 0 -2px #000000;
+}
+
+.about-info h2 {
+  position: absolute;
+  top: -25px;
+  left: 170px;
+  z-index: 1;
+
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  color: #000000;
+
+  background-color: #f8f5f2;
+  background-image: url("../img/content-bg-20x20.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.about-info h3 {
+  width: 240px;
+  margin-bottom: 35px;
+}
+
+.about-price h3 {
+  width: 200px;
+}
+
+.about-price {
+  width: 460px;
+}
+
+.price-list {
+  width: 100%;
+}
+
 .pagination-list {
   display: flex;
   margin: 0;
@@ -625,6 +673,10 @@ a {
   color: #aba9a7;
 }
 
+.inner-price .breadcrumbs {
+  margin-bottom: 75px;
+}
+
 .advantages-list {
   list-style: none;
 }
@@ -842,8 +894,25 @@ a {
   border-collapse: collapse;
 }
 
-.price-list td {
+.price-list td,
+.price-list th {
+  padding: 0;
+  padding: 7px;
+  vertical-align: middle;
+
   border: 2px solid #000000;
+}
+
+.price-list th {
+  padding-left: 17px;
+
+  text-align: left;
+}
+
+.price-list td {
+  width: 50%;
+
+  text-align: center;
 }
 
 .remedies-list {
