@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  padding-bottom: 65px;
 
   font-family: "PT Sans Narrow", sans-serif;
   font-size: 14px;
@@ -38,6 +39,10 @@ body {
 }
 
 .content-wrapper > * {
+  outline: 1px solid red;
+}
+
+.page-footer .layout-positioner > * {
   outline: 1px solid red;
 }
 /* -------- ОСН РАЗМЕТКА СЕТКИ -------- */
@@ -101,6 +106,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
+  margin-bottom: 35px;
   padding: 50px 80px;
 }
 
@@ -139,6 +145,33 @@ body {
 
 .content-section .button + .button {
   margin-left: 15px;
+}
+
+.content-contacts p {
+  margin-bottom: 20px;
+}
+
+.check-in-form {
+  margin: 0;
+  padding: 0;
+}
+
+.check-in-wrapper {
+  display: inline-block;
+}
+
+.check-in-wrapper:nth-child(2n+1) {
+  margin-right: 15px;
+}
+
+.check-in-wrapper label {
+  display: block;
+  padding-left: 15px;
+}
+
+.page-footer .layout-positioner {
+  display: flex;
+  justify-content: space-between;
 }
 /* -------------- ДЕКОРАТИВНЫЕ ЭЛЕМЕНТЫ ------------ */
 
