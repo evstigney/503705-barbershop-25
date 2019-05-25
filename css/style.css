@@ -37,6 +37,10 @@ body {
 .layout-positioner {
   outline: 1px solid yellow;
 }
+
+.content-wrapper-catalog > * {
+  outline: 1px solid red;
+}
 /* -------- ОСН РАЗМЕТКА СЕТКИ -------- */
 
 .layout-positioner {
@@ -55,6 +59,7 @@ body {
 .inner-page .page-header {
   flex-direction: column;
   justify-content: flex-start;
+  margin-bottom: 0;
 }
 
 .layout-logo {
@@ -71,11 +76,15 @@ body {
   margin-bottom: 60px;
 }
 
+.inner-page .main-nav {
+  margin-bottom: 30px;
+}
+
 .main-nav .layout-positioner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 70px;
+  min-height: 73px;
 }
 
 .main-menu-list {
@@ -107,12 +116,72 @@ body {
   padding: 0;
 }
 
+.inner-page h1 {
+  margin-bottom: 15px;
+}
+
+.breadcrumbs {
+  display: flex;
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0;
+}
+
+.breadcrumbs li {
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumbs li:not(:last-child) {
+  position: relative;
+
+  padding-right: 40px;
+}
+
+.breadcrumbs li:not(:last-child)::after {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+
+  width: 9px;
+  height: 9px;
+
+  background-color: #040404;
+
+  transform: rotate(45deg);
+  content: "";
+}
+
 .content-wrapper {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
   margin-bottom: 35px;
   padding: 50px 80px;
+}
+
+.content-wrapper-catalog {
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.product-filters {
+  width: 220px;
+}
+
+.product-filters legend {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+.product-filter-wrapper {
+  margin-bottom: 20px;
+}
+
+.variety {
+  width: 700px;
 }
 
 .content-section:not(:last-child) {
@@ -193,6 +262,8 @@ body {
   width: 780px;
   flex-basis: 577px;
 }
+
+
 /* -------------- ДЕКОРАТИВНЫЕ ЭЛЕМЕНТЫ ------------ */
 
 a {
@@ -223,6 +294,10 @@ a {
 .button:focus,
 .button:active {
   background-color: #663d15;
+}
+
+.filter-form .button {
+  width: 110px;
 }
 
 .main-nav {
@@ -407,6 +482,10 @@ a {
 }
 
 .product-filters fieldset {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+
   border: none;
 }
 
