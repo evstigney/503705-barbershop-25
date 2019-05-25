@@ -44,7 +44,7 @@ body {
   outline: 1px solid yellow;
 }
 
-.content-wrapper-catalog > * {
+.page-footer .layout-positioner > * {
   outline: 1px solid red;
 }
 /* -------- ОСН РАЗМЕТКА СЕТКИ -------- */
@@ -345,6 +345,23 @@ body {
 .page-footer .layout-positioner {
   display: flex;
   justify-content: space-between;
+}
+
+.page-footer-block {
+  margin-top: 20px;
+}
+
+.inner-page .page-footer-contacts {
+  margin-right: 100px;
+}
+
+.inner-page .page-footer-social {
+  margin-right: auto;
+}
+
+.page-footer-develop b {
+  display: block;
+  margin-bottom: 10px;
 }
 
 .modal {
@@ -773,6 +790,8 @@ a {
 }
 
 .page-footer {
+  font-size: inherit;
+  line-height: 24px;
   color: #ffffff;
 
   background-color: #212121;
