@@ -48,7 +48,7 @@ body {
   outline: 1px solid green;
 }
 
-.product-info-wrapper > * {
+.product-info > * {
   outline: 1px solid red;
 }
 /* -------- ОСН РАЗМЕТКА СЕТКИ -------- */
@@ -300,7 +300,8 @@ body {
   display: block;
 }
 
-.variety-item-price b {
+.variety-item-price b,
+.product-price b {
   display: inline-block;
   width: 100px;
   padding-top: 10px;
@@ -310,6 +311,7 @@ body {
 
 .product-info-wrapper {
   display: flex;
+  justify-content: space-between;
 }
 
 .product-photo-big {
@@ -331,8 +333,64 @@ body {
   height: 149px;
   margin: 0;
   padding: 0;
+}
 
-  outline: 1px solid blue; /*------ ВСПОМОГАТЕЛЬНАЯ РАМКА -------- */
+.product-info {
+  width: 390px;
+  padding-top: 25px;
+}
+
+.product-info p {
+  margin: 0;
+  padding: 0;
+}
+
+p.product-availability-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  margin-right: 10px;
+}
+
+p.product-description {
+  margin-bottom: 35px;
+}
+
+p.product-price {
+  margin-bottom: 60px;
+}
+
+.product-info h3 {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+.components-list {
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+}
+
+.components-list li {
+  position: relative;
+
+  margin: 0;
+  padding: 0;
+}
+
+.components-list li::after {
+  position: absolute;
+  top: 6px;
+  left: -16px;
+
+  width: 8px;
+  height: 8px;
+
+  background-color: #040404;
+
+  transform: rotate(45deg);
+  content: "";
 }
 
 .pagination-list {
@@ -447,7 +505,8 @@ a {
   width: 110px;
 }
 
-.variety-item .button {
+.variety-item .button,
+.product-price .button {
   width: 80px;
 }
 
