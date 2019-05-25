@@ -173,6 +173,21 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.modal-login {
+  width: 460px;
+}
+
+.modal-map {
+  width: 780px;
+  flex-basis: 577px;
+}
 /* -------------- ДЕКОРАТИВНЫЕ ЭЛЕМЕНТЫ ------------ */
 
 a {
