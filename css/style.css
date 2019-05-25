@@ -180,12 +180,6 @@ body {
   margin-bottom: 20px;
 }
 
-.variety {
-  width: 700px;
-  margin-bottom: 20px;
-  padding-top: 5px;
-}
-
 .content-section:not(:last-child) {
   margin-right: 20px;
 }
@@ -245,12 +239,19 @@ body {
   padding-left: 15px;
 }
 
+.variety {
+  width: 700px;
+  margin-bottom: 50px;
+  padding-top: 5px;
+}
+
 .variety-list {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   align-content: flex-start;
   margin: 0;
+  margin-bottom: 30px;
   padding: 0;
 }
 
@@ -294,6 +295,28 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 5px;
+}
+
+.pagination-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.pagination-item {
+  margin: 0;
+  margin-right: 5px;
+  padding: 0;
+}
+
+.pagination-item a {
+  display: inline-block;
+  width: 44px;
+  height: 30px;
+  padding-top: 14px;
+
+  text-align: center;
+  vertical-align: middle;
 }
 
 .page-footer .layout-positioner {
