@@ -441,6 +441,46 @@ p.product-price {
   width: 100%;
 }
 
+.about-remedies {
+  margin-right: 20px;
+}
+
+.about-remedies h3 {
+  margin-bottom: 30px;
+}
+
+.remedies-list {
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0;
+}
+
+.remedies-list li {
+  position: relative;
+
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+}
+
+.remedies-list li:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.remedies-list li::before {
+  position: absolute;
+  top: 7px;
+  left: 0;
+
+  width: 8px;
+  height: 8px;
+
+  background-color: #000000;
+
+  transform: rotate(45deg);
+  content: "";
+}
+
 .pagination-list {
   display: flex;
   margin: 0;
