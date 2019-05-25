@@ -16,7 +16,12 @@ body {
   background-repeat: no-repeat;
 }
 
+.inner-page {
+  background-image: none;
+}
+
 .inner-page main {
+  margin-bottom: 40px;
   padding-top: 50px;
 
   color: #000000;
@@ -243,7 +248,7 @@ body {
 
 .variety {
   width: 700px;
-  margin-bottom: 50px;
+  margin-bottom: 45px;
   padding-top: 5px;
 }
 
@@ -321,11 +326,26 @@ body {
   vertical-align: middle;
 }
 
+.inner-page .page-footer {
+  position: relative;
+}
+
+.page-footer-shadow {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+
+  background-color: #212121;
+  box-shadow: 0 0 20px 20px #212121;
+}
+
 .page-footer .layout-positioner {
   display: flex;
   justify-content: space-between;
 }
-
 
 .modal {
   display: flex;
