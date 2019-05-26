@@ -52,6 +52,10 @@ body {
 .about-info > * {
   outline: 1px solid red;
 }
+
+.about-us-wrapper > * {
+  outline: 1px solid blue;
+}
 /* -------- ОСН РАЗМЕТКА СЕТКИ -------- */
 
 .layout-positioner {
@@ -426,11 +430,12 @@ p.product-price {
 
 .about-info h3 {
   width: 240px;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .about-price h3 {
   width: 200px;
+  margin-bottom: 35px;
 }
 
 .about-price {
@@ -443,10 +448,6 @@ p.product-price {
 
 .about-remedies {
   margin-right: 20px;
-}
-
-.about-remedies h3 {
-  margin-bottom: 30px;
 }
 
 .remedies-list {
@@ -479,6 +480,26 @@ p.product-price {
 
   transform: rotate(45deg);
   content: "";
+}
+
+.about-us {
+  margin-right: auto;
+}
+
+.about-us-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-us-wrapper p {
+  margin: 0;
+  padding: 0;
+  width: 370px;
+}
+
+.about-us-wrapper p:nth-child(2n+1) {
+  width: 390px;
+  margin-right: 90px;
 }
 
 .pagination-list {
