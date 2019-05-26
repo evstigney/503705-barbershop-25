@@ -37,26 +37,11 @@ body {
   line-height: 18px;
 }
 
+.inner-price main {
+  padding-bottom: 75px;
+}
+
 /* ------ РАЗМЕТКА СЕТКИ ----------- */
-
-/* ВСПОМОГАТЕЛЬНЫЕ ФОНЫ */
-
-.layout-positioner {
-  outline: 1px solid yellow;
-}
-
-.about-info {
-  outline: 1px solid green;
-}
-
-.about-info > * {
-  outline: 1px solid red;
-}
-
-.about-us-wrapper > * {
-  outline: 1px solid blue;
-}
-/* -------- ОСН РАЗМЕТКА СЕТКИ -------- */
 
 .layout-positioner {
   width: 940px;
