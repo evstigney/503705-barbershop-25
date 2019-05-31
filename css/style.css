@@ -1135,7 +1135,15 @@ a {
 }
 
 .page-footer-develop {
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-footer-develop .button {
+  padding-left: 30px;
+  padding-right: 25px;
 }
 
 .page-footer-develop .button:hover,
