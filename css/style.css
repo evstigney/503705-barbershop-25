@@ -244,6 +244,9 @@ body {
 }
 
 .check-in-form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
@@ -259,6 +262,26 @@ body {
 .check-in-wrapper label {
   display: block;
   padding-left: 15px;
+  padding-bottom: 7px;
+}
+
+.check-in-form input {
+  box-sizing: border-box;
+  width: 140px;
+  padding: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 10px;
+
+  font-size: 14px;
+  line-height: 39px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.7);
+  text-transform: none;
+  vertical-align: middle;
+
+  background-color: #f9f6f3;
+  border: 2px solid #000101;
 }
 
 .variety {
@@ -801,7 +824,7 @@ a {
 
 .content-wrapper h2 {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
   padding: 0;
 
   font-size: 30px;
@@ -811,6 +834,10 @@ a {
 .photogallery-content {
   background-color: #cccccc;
   border: 8px solid #ffffff;
+}
+
+.content-check-in p {
+  margin-bottom: 10px;
 }
 
 .check-in input {
