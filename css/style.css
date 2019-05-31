@@ -236,7 +236,7 @@ body {
 }
 
 .content-section .button + .button {
-  margin-left: 15px;
+  margin-left: 20px;
 }
 
 .content-contacts p {
@@ -613,6 +613,16 @@ a {
 .button:focus,
 .button:active {
   background-color: #663d15;
+}
+
+.button-address {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.button-feedback {
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .filter-form .button {
