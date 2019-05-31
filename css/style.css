@@ -559,7 +559,7 @@ p.product-price {
 
 .page-footer {
   padding-top: 60px;
-  padding-bottom
+  padding-bottom: 40px;
 }
 
 .inner-page .page-footer {
@@ -580,13 +580,12 @@ p.product-price {
 
 .page-footer .layout-positioner {
   display: flex;
-  justify-content: space-between;
 }
-.inner-page .page-footer-contacts {
-  margin-right: 100px;
+.page-footer-contacts {
+  margin-right: 92px;
 }
 
-.inner-page .page-footer-social {
+.page-footer-social {
   margin-right: auto;
 }
 
@@ -1094,13 +1093,34 @@ a {
 }
 
 .social-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-top: 13px;
+  padding: 0;
   list-style: none;
 }
 
-.social-button {
-  color: #ffffff;
+.social-item:not(:last-of-type) {
+  margin-right: 7px;
+}
 
-  background-color: #212121;
+.social-button {
+  display: block;
+  width: 43px;
+  height: 43px;
+  padding-top: 5px;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  text-align: center;
+  background-color: #000000;
+}
+
+.social-button svg {
+  display: inline-block;
+  line-height: 43px;
+  vertical-align: bottom;
 }
 
 .page-footer-develop {
