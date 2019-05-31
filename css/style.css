@@ -757,9 +757,15 @@ a {
   color: #000000;
 
   background-color: #f8f5f2;
-  background-image: url("../img/content-bg-20x20.jpg");
-  background-position: 0 0;
-  background-repeat: repeat;
+  background-image:
+    url("../img/border-shadow-80x278.png"),
+    url("../img/content-bg-20x20.jpg");
+  background-position:
+    50% 50%,
+    0 0;
+  background-repeat:
+    no-repeat,
+    repeat;
 }
 
 .content-wrapper h2 {
