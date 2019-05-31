@@ -20,6 +20,10 @@ body {
   background-image: none;
 }
 
+.index-main {
+  margin-bottom: 63px;
+}
+
 .inner-page main {
   margin-bottom: 40px;
   padding-top: 50px;
@@ -553,6 +557,11 @@ p.product-price {
   vertical-align: middle;
 }
 
+.page-footer {
+  padding-top: 60px;
+  padding-bottom
+}
+
 .inner-page .page-footer {
   position: relative;
 }
@@ -573,11 +582,6 @@ p.product-price {
   display: flex;
   justify-content: space-between;
 }
-
-.page-footer-block {
-  margin-top: 20px;
-}
-
 .inner-page .page-footer-contacts {
   margin-right: 100px;
 }
