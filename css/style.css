@@ -1106,10 +1106,11 @@ a {
 }
 
 .social-button {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 43px;
   height: 43px;
-  padding-top: 5px;
   box-sizing: border-box;
   overflow: hidden;
 
@@ -1117,10 +1118,20 @@ a {
   background-color: #000000;
 }
 
-.social-button svg {
-  display: inline-block;
-  line-height: 43px;
-  vertical-align: bottom;
+.social-img {
+  fill: yellow !important;
+}
+
+.social-button:hover,
+.social-button:focus,
+.social-button:active {
+  background-color: #ffffff;
+}
+
+.social-button:hover path,
+.social-button:focus path,
+.social-button:active path {
+  fill: #000000;
 }
 
 .page-footer-develop {
@@ -1190,7 +1201,7 @@ a {
   border: 0;
   padding: 0;
 
-  white-space: no-wrap;
+  white-space: nowrap;
 
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
