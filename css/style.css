@@ -106,7 +106,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 62px;
   padding: 0;
 }
 
@@ -157,8 +157,8 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  margin-bottom: 35px;
-  padding-top: 50px;
+  margin-bottom: 37px;
+  padding-top: 47px;
   padding-bottom: 50px;
   padding-left: 80px;
   padding-right: 80px;
