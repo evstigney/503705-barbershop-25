@@ -648,6 +648,11 @@ a {
   padding-right: 24px;
 }
 
+.check-in-form .button {
+  width: 100%;
+  margin-top: 10px;
+}
+
 .filter-form .button {
   width: 110px;              /* УБРАТЬ ШИРИНУ */
 }
