@@ -158,7 +158,28 @@ body {
   justify-content: space-around;
   align-items: flex-start;
   margin-bottom: 35px;
-  padding: 50px 80px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.photogallery {
+  position: relative;
+}
+
+.photogallery .button {
+  position: absolute;
+  bottom: -45px;
+
+  width: 140px;
+}
+.button-gallery-prev {
+  left: 0;
+}
+
+.button-gallery-next {
+  right: 0;
 }
 
 .content-wrapper-catalog {
@@ -190,8 +211,8 @@ body {
 }
 
 .content-section:last-child {
-  width: 300px;
-  padding-left: 80px;
+  width: 310px;
+  margin-left: 100px;
 }
 
 .content-section p {
