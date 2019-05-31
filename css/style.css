@@ -204,7 +204,7 @@ body {
 }
 
 .content-section-news .button {
-  margin-top: 10px;
+  margin-top: 7px;
 }
 
 .photogallery-content {
@@ -571,14 +571,13 @@ a {
 
 .button {
   display: inline-block;
-  width: 140px;
   margin: 0;
   padding: 0;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-left: 34px;
+  padding-right: 34px;
 
   font-size: inherit;
-  line-height: inherit;
+  line-height: 44px;
   color: #ffffff;
   text-align: center;
   vertical-align: middle;
@@ -596,12 +595,12 @@ a {
 }
 
 .filter-form .button {
-  width: 110px;
+  width: 110px;              /* УБРАТЬ ШИРИНУ */
 }
 
 .variety-item .button,
 .product-price .button {
-  width: 80px;
+  width: 80px;                /* УБРАТЬ ШИРИНУ */
 }
 
 .main-nav {
@@ -1089,7 +1088,7 @@ a {
   text-decoration: none;
 }
 
-.visually-hidden:not(:focus):not(:activer) {
+.visually-hidden:not(:focus):not(:active) {
   position: absolute;
 
   width: 1px;
