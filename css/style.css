@@ -1209,7 +1209,7 @@ a {
   text-transform: uppercase;
 
   background-color: #f9f6f3;
-  border: 2px solid #000000;
+  border: 2px solid #000101;
 }
 
 .login-form input[type="text"]:not(:last-of-type) {
@@ -1230,6 +1230,36 @@ a {
   background-image: url("../img/bg-password-13x15.png");
   background-repeat: no-repeat;
   background-position: right 14px bottom 50%;
+}
+
+.login-checkbox {
+  position: relative;
+  padding-left: 15px;
+}
+
+input[name="isRemember"] {
+  visibility: hidden;
+}
+
+input[name="isRemember"] + .login-checkbox::before {
+  position: absolute;
+  left: -15px;
+  top: auto;
+
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+
+  background-color: inherit;
+  border: 2px solid #000101;
+
+  content: "";
+}
+
+input[name="isRemember"]:checked + .login-checkbox::before {
+  background-image: url("../img/cross-12x12.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 .login-form input[type="text"]:hover,
