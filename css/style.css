@@ -815,7 +815,7 @@ a {
   content: "";
 }
 
-.content-wrapper {
+.index-main .content-wrapper {
   color: #000000;
 
   background-color: #f8f5f2;
@@ -1155,6 +1155,7 @@ a {
 }
 
 .modal {
+  position: relative;
   color: #000000;
 
   background-color: #f8f5f2;
@@ -1163,18 +1164,72 @@ a {
   background-repeat: repeat;
 }
 
+.modal-login {
+  width: 303px;
+  padding-top: 50px;
+  padding-bottom: 57px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
 .modal h2 {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+
   font-size: 30px;
   line-height: 42px;
 }
 
+.modal-login p {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+}
+
+.login-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
 .login-form input[type="text"] {
-  font: inherit;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 30px;
+  box-sizing; border-box;
+
+  font-size: inherit;
+  line-height: 39px;
   color: #000000;
+  vertical-align: middle;
   text-transform: uppercase;
 
   background-color: #f9f6f3;
   border: 2px solid #000000;
+}
+
+.login-form input[type="text"]:not(:last-of-type) {
+  margin-bottom: 9px;
+}
+
+.login-form input[type="text"]:last-of-type {
+  margin-bottom: 15px;
+}
+
+.login-form input[name="login"] {
+  background-image: url("../img/bg-user-13x13.png");
+  background-repeat: no-repeat;
+  background-position: right 14px bottom 50%;
+}
+
+.login-form input[name="password"] {
+  background-image: url("../img/bg-password-13x15.png");
+  background-repeat: no-repeat;
+  background-position: right 14px bottom 50%;
 }
 
 .login-form input[type="text"]:hover,
