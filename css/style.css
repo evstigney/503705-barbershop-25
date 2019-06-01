@@ -1277,12 +1277,31 @@ input[name="isRemember"]:checked + .login-checkbox::before {
 .recovery {
   color: #000000;
   text-decoration: underline;
+  margin-bottom: 10px;
 }
 
 .recovery:hover,
 .recovery:focus,
 .recovery:active {
   text-decoration: none;
+}
+
+.login-button {
+  width: 100%;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0;
+  right: -32px;
+  width: 19px;
+  height: 19px;
+
+  background-color: transparent;
+  background-image: url("../img/close-cross-19x19.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border: none;
 }
 
 .visually-hidden:not(:focus):not(:active) {
