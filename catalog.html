@@ -243,20 +243,19 @@
       <h2>Личный кабинет</h2>
       <p>Введите пожалуйста свой логин и пароль</p>
       <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-        <label><span class="visually-hidden">Логин</span>
-          <input class="input-field input-login" type="text" name="login" value="Логин">
-        </label>
-        <label><span class="visually-hidden">Пароль</span>
-          <input class="input-field input-password" type="text" name="password" value="Пароль">
-        </label>
-        <label class="login-checkbox">
-          <input type="checkbox" name="isRemember" checked>
-          Запомните меня
-        </label>
+        <label class="visually-hidden" for="login-field">Логин </label>
+        <input class="input-field" type="text" name="login" id="login-field" value="Логин">
+        <label class="visually-hidden" for="password-field">Пароль</label>
+        <input class="input-field" type="text" name="password" id="password-field" value="Пароль">
+        <span>
+          <input type="checkbox" name="isRemember" id="isRemember-checkbox" checked>
+          <label class="login-checkbox" for="isRemember-checkbox">Запомните меня</label>
+        </span>
         <a class="recovery" href="recovery.html">Я забыл пароль!</a>
         <button class="button login-button" type="submit">Войти</button>
         <button class="modal-close" type="button"><span class="visually-hidden">Закрыть окно</span></button>
       </form>
     </section>
+
   </body>
 </html>

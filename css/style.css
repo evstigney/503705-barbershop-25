@@ -598,7 +598,8 @@ p.product-price {
   margin-bottom: 10px;
 }
 
-.modal {
+.modal,
+.inner-page .modal {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
