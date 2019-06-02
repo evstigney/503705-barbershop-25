@@ -343,7 +343,8 @@ body {
   display: inline-block;
 }
 
-.variety-item-price b {
+.variety-item-price b,
+.product-price b {
   min-width: 43px;
   padding-left: 35px;
   padding-right: 30px;
@@ -668,12 +669,10 @@ a {
   line-height: 43px;
 }
 
-.variety-item .button {
+.variety-item .button,
+.product-price .button {
   padding-left: 19px;
   padding-right: 16px;
-}
-.product-price .button {
-  width: 80px;                /* УБРАТЬ ШИРИНУ */
 }
 
 .main-nav {
@@ -1031,7 +1030,8 @@ a {
   background-color: #ffffff;
 }
 
-.variety-item-price b {
+.variety-item-price b,
+.product-price b {
   line-height: 43px;
   color: #000000;
   text-align: center;
