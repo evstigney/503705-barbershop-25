@@ -568,7 +568,7 @@ p.product-price {
 
 .inner-page .page-footer {
   position: relative;
-  padding-top: 22px;
+  padding-top: 23px;
 }
 
 .page-footer-shadow {
@@ -587,7 +587,7 @@ p.product-price {
   display: flex;
 }
 .page-footer-contacts {
-  margin-right: 92px;
+  margin-right: 95px;
 }
 
 .page-footer-social {
@@ -596,7 +596,7 @@ p.product-price {
 
 .page-footer-develop b {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .modal,
