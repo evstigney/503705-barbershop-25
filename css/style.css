@@ -203,7 +203,8 @@ body {
 }
 
 .product-filter-wrapper {
-  margin-bottom: 20px;
+  width: 170px;
+  margin-bottom: 19px;
 }
 
 .content-section:not(:last-child) {
@@ -862,7 +863,7 @@ a {
 
 .product-filters fieldset {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 29px;
   padding: 0;
 
   border: none;
@@ -873,13 +874,51 @@ a {
   line-height: 30px;
 }
 
+.product-filters input[type="checkbox"] + label,
+.product-filters input[type="radio"] + label {
+  position: relative;
+  top: auto;
+  left: 45px;
+}
+
+.product-filters input[type="checkbox"] + label::before,
+.product-filters input[type="radio"] + label::before {
+  position: absolute;
+  top: -3px;
+  left: -45px;
+
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+
+  background-color: #f9f6f3;
+  border: 2px solid #000101;
+
+  content: "";
+}
+
+.product-filters input[type="radio"] + label::before {
+  border-radius: 50%;
+}
+
 .product-filters input:hover + label,
 .product-filters input:focus + label {
+  padding: 0;
   color: #663d15;
 }
 
-.product-filters
- input:disabled + label {
+.product-filters input[type="checkbox"]:checked + label::before {
+  background-image: url("../img/cross-12x12.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.product-filters input[type="radio"]:checked + label::before {
+  background-color: #000000;
+  box-shadow: inset 0 0 0 4px #f9f6f3;
+}
+
+.product-filters input:disabled + label {
   color: #000000;
 
   opacity: 0.5;
@@ -1200,7 +1239,7 @@ a {
   width: 100%;
   padding-left: 15px;
   padding-right: 30px;
-  box-sizing; border-box;
+  box-sizing: border-box;
 
   font-size: inherit;
   line-height: 39px;
@@ -1304,7 +1343,7 @@ input[name="isRemember"]:checked + .login-checkbox::before {
   border: none;
 }
 
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden {
   position: absolute;
 
   width: 1px;
