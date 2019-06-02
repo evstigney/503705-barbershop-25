@@ -316,7 +316,7 @@ body {
   margin: 0;
   padding: 0;
   padding-top: 10px;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -341,10 +341,12 @@ body {
 .variety-item-price b,
 .product-price b {
   display: inline-block;
-  width: 100px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 5px;
+}
+
+.variety-item-price b {
+  min-width: 43px;
+  padding-left: 35px;
+  padding-right: 30px;
 }
 
 .product-info-wrapper {
@@ -625,7 +627,7 @@ a {
   padding-right: 34px;
 
   font-size: inherit;
-  line-height: 44px;
+  line-height: 43px;
   color: #ffffff;
   text-align: center;
   vertical-align: middle;
@@ -664,7 +666,10 @@ a {
   line-height: 43px;
 }
 
-.variety-item .button,
+.variety-item .button {
+  padding-left: 19px;
+  padding-right: 16px;
+}
 .product-price .button {
   width: 80px;                /* УБРАТЬ ШИРИНУ */
 }
@@ -1003,6 +1008,11 @@ a {
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
 }
 
+.variety-item-header {
+  font-size: 14px;
+  line-height: 18px;
+}
+
 .variety-item-header span:first-child {
   text-transform: none;
 }
@@ -1020,6 +1030,7 @@ a {
 }
 
 .variety-item-price b {
+  line-height: 43px;
   color: #000000;
   text-align: center;
   vertical-align: middle;
