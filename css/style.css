@@ -658,7 +658,10 @@ a {
 }
 
 .filter-form .button {
-  width: 110px;              /* УБРАТЬ ШИРИНУ */
+  padding-right: 28px;
+
+  font-size: 13px;
+  line-height: 43px;
 }
 
 .variety-item .button,
@@ -863,7 +866,7 @@ a {
 
 .product-filters fieldset {
   margin: 0;
-  margin-bottom: 29px;
+  margin-bottom: 30px;
   padding: 0;
 
   border: none;
