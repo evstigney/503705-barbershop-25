@@ -87,12 +87,13 @@ body {
 .main-nav .layout-positioner {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   min-height: 73px;
 }
 
 .main-menu-list {
   display: flex;
+  flex-wrap: wrap;
+  width: 570px;
   margin: 0;
   padding: 0;
 }
@@ -102,6 +103,8 @@ body {
 }
 
 .user-menu-list {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
