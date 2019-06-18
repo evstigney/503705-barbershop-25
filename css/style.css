@@ -1398,6 +1398,10 @@ input[name="isRemember"]:checked + .login-checkbox::before {
   border: none;
 }
 
+.inner-page .modal-close {
+  background-image: url("../img/close-cross-dark-19x19.png");
+}
+
 .visually-hidden {
   position: absolute;
 
