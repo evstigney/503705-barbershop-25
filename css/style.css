@@ -301,6 +301,14 @@ body {
   border: 2px solid #000101;
 }
 
+.check-in-form input::placeholder {
+  color: #4a4948;
+}
+
+.check-in-form button.check-in-button {
+  margin-top: 7px;
+}
+
 .variety {
   width: 700px;
   padding-top: 5px;
@@ -616,10 +624,6 @@ p.product-price {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-}
-
-.modal-login {
-  width: 460px;
 }
 
 .modal-map {
@@ -1236,8 +1240,12 @@ a {
 }
 
 .modal-login {
-  width: 303px;
-  padding-top: 50px;
+  position: fixed;
+  top: 120px;
+  left: 35.9%;
+
+  width: 301px;
+  padding-top: 48px;
   padding-bottom: 57px;
   padding-left: 80px;
   padding-right: 80px;
@@ -1245,7 +1253,7 @@ a {
 
 .modal h2 {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 13px;
   padding: 0;
 
   font-size: 30px;
@@ -1254,7 +1262,7 @@ a {
 
 .modal-login p {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   padding: 0;
 }
 
@@ -1267,27 +1275,33 @@ a {
   padding: 0;
 }
 
-.login-form input[type="text"] {
+.login-form input[type="text"],
+.login-form input[type="password"] {
   width: 100%;
   padding-left: 15px;
   padding-right: 30px;
   box-sizing: border-box;
 
   font-size: inherit;
-  line-height: 39px;
+  line-height: 37px;
   color: #000000;
-  vertical-align: middle;
   text-transform: uppercase;
+  vertical-align: middle;
 
   background-color: #f9f6f3;
   border: 2px solid #000101;
 }
 
-.login-form input[type="text"]:not(:last-of-type) {
+.login-form input[type="text"]::placeholder,
+.login-form input[type="password"]::placeholder {
+  color: #000000;
+}
+
+.login-form input[type="text"] {
   margin-bottom: 9px;
 }
 
-.login-form input[type="text"]:last-of-type {
+.login-form input[type="password"] {
   margin-bottom: 15px;
 }
 
@@ -1305,7 +1319,10 @@ a {
 
 .login-checkbox {
   position: relative;
-  padding-left: 15px;
+  left: -13px;
+
+  margin-right: auto;
+  padding-left: 34px;
 }
 
 input[name="isRemember"] {
@@ -1314,7 +1331,7 @@ input[name="isRemember"] {
 
 input[name="isRemember"] + .login-checkbox::before {
   position: absolute;
-  left: -15px;
+  left: 0;
   top: auto;
 
   display: inline-block;
@@ -1348,7 +1365,7 @@ input[name="isRemember"]:checked + .login-checkbox::before {
 .recovery {
   color: #000000;
   text-decoration: underline;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .recovery:hover,
@@ -1359,11 +1376,12 @@ input[name="isRemember"]:checked + .login-checkbox::before {
 
 .login-button {
   width: 100%;
+  padding-left: 26px;
 }
 
 .modal-close {
   position: absolute;
-  top: 0;
+  top: 9px;
   right: -32px;
   width: 19px;
   height: 19px;
