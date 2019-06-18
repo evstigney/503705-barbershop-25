@@ -233,6 +233,14 @@ body {
   margin-bottom: 20px;
 }
 
+.news-item time {
+  text-transform: none;
+}
+
+.news-item:last-of-type {
+  margin-bottom: 23px;
+}
+
 .content-section-news .button {
   margin-top: 7px;
 }
