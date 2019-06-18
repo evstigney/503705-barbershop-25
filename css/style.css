@@ -861,6 +861,10 @@ a {
   line-height: 42px;
 }
 
+.photogallery h2 {
+  padding-left: 6px;
+}
+
 .photogallery-content {
   background-color: #cccccc;
   border: 8px solid #ffffff;
