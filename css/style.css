@@ -626,6 +626,7 @@ p.product-price {
   margin: 0 auto;
 
   box-shadow: 0 30px 50px 0 #000101;
+  opacity: 0;
 }
 
 .modal-map {
@@ -1251,6 +1252,8 @@ a {
   padding-bottom: 57px;
   padding-left: 80px;
   padding-right: 80px;
+
+  opacity: 0;
 }
 
 .modal h2 {
