@@ -2,6 +2,7 @@
 var loginButton = document.querySelector('a[href="login.html"]');
 var closeButton = document.querySelector('.modal-close');
 var modalLogin = document.querySelector('.modal-login');
+var showModalFlag = false;
 
 var showModal = function (element) {
   var target = event.target;
@@ -10,11 +11,12 @@ var showModal = function (element) {
   var timer = setInterval(function() {
     if (opacity <= 1) {
       element.style.opacity = opacity;
-      opacity += .1;
+      opacity += 0.1;
     } else {
       clearInterval(timer);
     }
   }, 70);
+  return true;
 };
 
 var closeModal = function (element) {
@@ -27,19 +29,24 @@ var closeModal = function (element) {
       clearInterval(timer);
     }
   }, 70);
+  return false;
 };
 
 var modalLoginHandler = function () {
-  if (event.keyCode === 32 || event.type === 'click') {
-    showModal(modalLogin);
-  };
+  if (!showModalFlag) {
+    if (event.keyCode === 32 || event.type === 'click') {
+      showModalFlag = showModal(modalLogin);
+    }
+  }
 };
 
 var modalCloseHandler = function () {
-  if (event.keyCode === 32 || event.type === 'click') {
-  loginButton.setAttribute('href', 'login.html');
-    closeModal(modalLogin);
-  };
+  if (showModalFlag) {
+    if (event.keyCode === 32 || event.type === 'click') {
+    loginButton.setAttribute('href', 'login.html');
+      showModalFlag = closeModal(modalLogin);
+    }
+  }
 };
 
 loginButton.addEventListener('click', modalLoginHandler);
