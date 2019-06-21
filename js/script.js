@@ -79,7 +79,9 @@ closeButton[0].addEventListener('click', closeLoginHandler);
 closeButton[0].addEventListener('keypress', closeLoginHandler);
 
 addressButton.addEventListener('click', openMapHandler);
+addressButton.addEventListener('keypress', openMapHandler);
 closeButton[1].addEventListener('click', closeMapHandler);
+closeButton[1].addEventListener('keypress', closeMapHandler);
 
 /*---------- ИНТЕРАКТИВНАЯ КАРТА -------------*/
 
