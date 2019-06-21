@@ -615,7 +615,9 @@ p.product-price {
 }
 
 .page-footer-social {
+  max-width: 400px;
   margin-right: auto;
+  text-align: center;
 }
 
 .page-footer-develop b {
@@ -1166,10 +1168,6 @@ a {
   text-decoration: none;
 }
 
-.page-footer-social {
-  text-align: center;
-}
-
 .social-list {
   display: flex;
   flex-wrap: wrap;
@@ -1181,6 +1179,7 @@ a {
 
 .social-item:not(:last-of-type) {
   margin-right: 7px;
+  margin-bottom:  10px;
 }
 
 .social-button {
