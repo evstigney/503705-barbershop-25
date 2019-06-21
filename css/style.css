@@ -1240,8 +1240,9 @@ a {
 .modal-login {
   position: fixed;
   top: 120px;
-  left: 35.9%;
+  left: 50%;
 
+  display: none;
   width: 301px;
   padding-top: 48px;
   padding-bottom: 57px;
@@ -1249,15 +1250,17 @@ a {
   padding-right: 80px;
 
   opacity: 0;
+
+  transform: translateX(-50%);
 }
 
 .modal-map {
   position: fixed;
   top: 137px;
   left: 50%;
-  width: 780px;
 
-  opacity: 1;
+  display: none;
+  width: 780px;
 
   transform: translateX(-50%);
 }
@@ -1392,6 +1395,8 @@ input[name="isRemember"]:checked + .login-checkbox::before {
 
 .interactive-map {
   position: absolute;
+  top: 0;
+  left: 0;
 
   width: 780px;
   height: 574px;
@@ -1405,6 +1410,7 @@ input[name="isRemember"]:checked + .login-checkbox::before {
   position: absolute;
   top: 9px;
   right: -32px;
+
   width: 19px;
   height: 19px;
 
@@ -1413,10 +1419,6 @@ input[name="isRemember"]:checked + .login-checkbox::before {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   border: none;
-}
-
-.inner-page .modal-close {
-  background-image: url("../img/close-cross-dark-19x19.png");
 }
 
 .visually-hidden {

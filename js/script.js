@@ -1,13 +1,16 @@
 /*------ МОДАЛЬНЫЕ ОКНА --------*/
 var loginButton = document.querySelector('a[href="login.html"]');
-var closeButton = document.querySelector('.modal-close');
+var addressButton = document.querySelector('.button-address');
+var closeButton = document.querySelectorAll('.modal-close');
 var modalLogin = document.querySelector('.modal-login');
+var modalMap = document.querySelector('.modal-map');
 var showModalFlag = false;
 
 var showModal = function (element) {
   var target = event.target;
   target.removeAttribute('href');
   var opacity = 0.1;
+  element.style.display = 'block';
   var timer = setInterval(function() {
     if (opacity <= 1) {
       element.style.opacity = opacity;
@@ -21,10 +24,13 @@ var showModal = function (element) {
 
 var closeModal = function (element) {
   var opacity = 1;
+  var display = 'block';
   var timer = setInterval(function() {
     if (opacity >= 0) {
       element.style.opacity = opacity;
-      opacity -= .1;
+      opacity -= 0.1;
+      display = (opacity <= 0) ? 'none' : 'block';
+      element.style.display = display;
     } else {
       clearInterval(timer);
     }
@@ -49,10 +55,31 @@ var closeLoginHandler = function () {
   }
 };
 
+var openMapHandler = function () {
+  if (!showModalFlag) {
+    if (event.keyCode === 32 || event.type === 'click') {
+      showModalFlag = showModal(modalMap);
+    }
+  }
+};
+
+var closeMapHandler = function () {
+  if (showModalFlag) {
+    if (event.keyCode === 32 || event.type === 'click') {
+      showModalFlag = closeModal(modalMap);
+    }
+  }
+};
+
+
+
 loginButton.addEventListener('click', openLoginHandler);
 loginButton.addEventListener('keypress', openLoginHandler);
-closeButton.addEventListener('click', closeLoginHandler);
-closeButton.addEventListener('keypress', closeLoginHandler);
+closeButton[0].addEventListener('click', closeLoginHandler);
+closeButton[0].addEventListener('keypress', closeLoginHandler);
+
+addressButton.addEventListener('click', openMapHandler);
+closeButton[1].addEventListener('click', closeMapHandler);
 
 /*---------- ИНТЕРАКТИВНАЯ КАРТА -------------*/
 
