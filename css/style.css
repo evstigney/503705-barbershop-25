@@ -1408,7 +1408,6 @@ input[name="isRemember"]:checked + .login-checkbox::before {
   height: 574px;
   box-sizing: border-box;
 
-  background-color: red;
   border: 9px solid #ffffff;
 }
 

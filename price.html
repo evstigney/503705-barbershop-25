@@ -82,7 +82,7 @@
         <div class="page-footer-block page-footer-contacts">
           Барбершоп «Бородинский»<br>
           Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-          <a href="map.html">Как нас найти?</a><br>
+          <a class="footer-map" href="map.html">Как нас найти?</a><br>
           Телефон: +7 (495) 666-02-66
         </div>
         <div class="page-footer-block page-footer-social">
@@ -128,6 +128,12 @@
         <button class="button login-button" type="submit">Войти</button>
         <button class="modal-close" type="button"><span class="visually-hidden">Закрыть окно</span></button>
       </form>
+    </section>
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <img src="img/map-big-780x574.png"  width="780" height="574" alt="Наш адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8">
+      <div class="interactive-map" id="map"></div>
+      <button class="modal-close" type="button"><span class="visually-hidden">Закрыть окно</span></button>
     </section>
     <script src="js/script.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1a4gRDY0iZ1WLCSKeqjaCfPm6gDjSukM&callback=initMap"></script>

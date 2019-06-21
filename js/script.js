@@ -1,6 +1,7 @@
 /*------ МОДАЛЬНЫЕ ОКНА --------*/
 var loginButton = document.querySelector('a[href="login.html"]');
 var addressButton = document.querySelector('.button-address');
+var addressFooter = document.querySelector('.footer-map');
 var closeButton = document.querySelectorAll('.modal-close');
 var modalLogin = document.querySelector('.modal-login');
 var modalMap = document.querySelector('.modal-map');
@@ -78,10 +79,16 @@ loginButton.addEventListener('keypress', openLoginHandler);
 closeButton[0].addEventListener('click', closeLoginHandler);
 closeButton[0].addEventListener('keypress', closeLoginHandler);
 
-addressButton.addEventListener('click', openMapHandler);
-addressButton.addEventListener('keypress', openMapHandler);
+if (addressButton) {
+  addressButton.addEventListener('click', openMapHandler);
+  addressButton.addEventListener('keypress', openMapHandler);
+}
+
 closeButton[1].addEventListener('click', closeMapHandler);
 closeButton[1].addEventListener('keypress', closeMapHandler);
+
+addressFooter.addEventListener('click', openMapHandler);
+addressFooter.addEventListener('keypress', openMapHandler);
 
 /*---------- ИНТЕРАКТИВНАЯ КАРТА -------------*/
 
