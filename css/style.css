@@ -629,12 +629,6 @@ p.product-price {
   opacity: 0;
 }
 
-.modal-map {
-  width: 780px;
-  flex-basis: 577px;
-}
-
-
 /* -------------- ДЕКОРАТИВНЫЕ ЭЛЕМЕНТЫ ------------ */
 
 a {
@@ -1234,6 +1228,7 @@ a {
 
 .modal {
   position: relative;
+
   color: #000000;
 
   background-color: #f8f5f2;
@@ -1254,6 +1249,17 @@ a {
   padding-right: 80px;
 
   opacity: 0;
+}
+
+.modal-map {
+  position: fixed;
+  top: 137px;
+  left: 50%;
+  width: 780px;
+
+  opacity: 1;
+
+  transform: translateX(-50%);
 }
 
 .modal h2 {
@@ -1382,6 +1388,17 @@ input[name="isRemember"]:checked + .login-checkbox::before {
 .login-button {
   width: 100%;
   padding-left: 26px;
+}
+
+.interactive-map {
+  position: absolute;
+
+  width: 780px;
+  height: 574px;
+  box-sizing: border-box;
+
+  background-color: red;
+  border: 9px solid #ffffff;
 }
 
 .modal-close {

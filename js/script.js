@@ -1,4 +1,4 @@
-/*------ ОКНО ВХОДА НА САЙТ --------*/
+/*------ МОДАЛЬНЫЕ ОКНА --------*/
 var loginButton = document.querySelector('a[href="login.html"]');
 var closeButton = document.querySelector('.modal-close');
 var modalLogin = document.querySelector('.modal-login');
@@ -32,7 +32,7 @@ var closeModal = function (element) {
   return false;
 };
 
-var modalLoginHandler = function () {
+var openLoginHandler = function () {
   if (!showModalFlag) {
     if (event.keyCode === 32 || event.type === 'click') {
       showModalFlag = showModal(modalLogin);
@@ -40,7 +40,7 @@ var modalLoginHandler = function () {
   }
 };
 
-var modalCloseHandler = function () {
+var closeLoginHandler = function () {
   if (showModalFlag) {
     if (event.keyCode === 32 || event.type === 'click') {
     loginButton.setAttribute('href', 'login.html');
@@ -49,7 +49,22 @@ var modalCloseHandler = function () {
   }
 };
 
-loginButton.addEventListener('click', modalLoginHandler);
-loginButton.addEventListener('keypress', modalLoginHandler);
-closeButton.addEventListener('click', modalCloseHandler);
-closeButton.addEventListener('keypress', modalCloseHandler);
+loginButton.addEventListener('click', openLoginHandler);
+loginButton.addEventListener('keypress', openLoginHandler);
+closeButton.addEventListener('click', closeLoginHandler);
+closeButton.addEventListener('keypress', closeLoginHandler);
+
+/*---------- ИНТЕРАКТИВНАЯ КАРТА -------------*/
+
+var initMap = function () {
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 16,
+    center: {lat: 59.939033, lng: 30.322833},
+    disableDefaultUI: true
+  });
+  var marker = new google.maps.Marker({
+  position: {lat: 59.938376, lng: 30.324603},
+  icon: 'img/map-marker.png',
+  map: map
+});
+};
