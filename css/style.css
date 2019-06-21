@@ -621,6 +621,8 @@ p.product-price {
 
 .modal,
 .inner-page .modal {
+  z-index: 2;
+
   display: flex;
   flex-direction: column;
   margin: 0 auto;
