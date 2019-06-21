@@ -583,7 +583,7 @@ p.product-price {
 
 .page-footer {
   padding-top: 60px;
-  padding-bottom: 40px;
+  padding-bottom: 33px;
 }
 
 .inner-page-footer {
@@ -623,6 +623,10 @@ p.product-price {
 .page-footer-develop b {
   display: block;
   margin-bottom: 15px;
+}
+
+.page-footer-develop .button {
+  margin-bottom: 20px;
 }
 
 .modal,
