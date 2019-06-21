@@ -87,6 +87,7 @@ body {
 .main-nav .layout-positioner {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   min-height: 73px;
 }
 
@@ -631,7 +632,7 @@ p.product-price {
 
 .modal,
 .inner-page .modal {
-  z-index: 2;
+  z-index: 4;
 
   display: flex;
   flex-direction: column;
