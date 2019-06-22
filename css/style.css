@@ -331,9 +331,11 @@ body {
 .variety-item {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   width: 220px;
   margin-bottom: 20px;
   padding-bottom: 15px;
+  overflow: hidden;
 }
 
 .variety-item-header {
@@ -356,6 +358,18 @@ body {
   margin: 0;
   padding: 0;
   order: -1;
+}
+
+.variety-item-img a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 165px;
+}
+
+.variety-item-img img {
+  max-width: 220px;
+  max-height: 165px;
 }
 
 .variety-item-header a span {
@@ -1176,6 +1190,10 @@ a {
 .page-footer-contacts a:focus,
 .page-footer-contacts a:active {
   text-decoration: none;
+}
+
+.footer-map {
+  display: block;
 }
 
 .social-list {
