@@ -25,15 +25,18 @@ body {
 }
 
 .inner-page main {
-  margin-bottom: 35px;
+  margin-bottom: 47px;
   padding-top: 50px;
-  padding-bottom: 47px;
-
+  padding-bottom: 37px;
   color: #000000;
   background-color: #f8f5f2;
   background-image: url("../img/content-bg-20x20.jpg");
   background-position: 0 0;
   background-repeat: repeat;
+}
+
+.inner-page .catalog-main {
+  margin-bottom: 35px;
 }
 
 .inner-shop {
@@ -562,6 +565,7 @@ p.product-price {
 
 .pagination-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
@@ -569,6 +573,7 @@ p.product-price {
 .pagination-item {
   margin: 0;
   margin-right: 5px;
+  margin-bottom: 10px;
   padding: 0;
 }
 
