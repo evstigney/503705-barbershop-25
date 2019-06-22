@@ -427,9 +427,19 @@ body {
 }
 
 .product-photo-preview li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
   height: 149px;
   margin: 0;
   padding: 0;
+  overflow: hidden;
+}
+
+.product-photo-preview img {
+  max-width: 140px;
+  max-height: 149px;
 }
 
 .product-info {
