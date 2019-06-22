@@ -11,10 +11,11 @@ var showModal = function (element) {
   var target = event.target;
   target.removeAttribute('href');
   var opacity = 0.1;
-  element.style.display = 'block';
+  var display = 'block';
   var timer = setInterval(function() {
     if (opacity <= 1) {
       element.style.opacity = opacity;
+      element.style.display = display;
       opacity += 0.1;
     } else {
       clearInterval(timer);
