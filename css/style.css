@@ -386,7 +386,7 @@ body {
 .product-price b {
   min-width: 43px;
   padding-left: 35px;
-  padding-right: 30px;
+  padding-right: 28px;
 }
 
 .product-info-wrapper {
@@ -459,17 +459,21 @@ p.product-availability-info {
   margin-right: 10px;
 }
 
+.product-availability {
+  min-width: 143px;
+}
+
 p.product-description {
   margin-bottom: 35px;
 }
 
 p.product-price {
-  margin-bottom: 60px;
+  margin-bottom: 63px;
 }
 
 .product-info h3 {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
   padding: 0;
 }
 
@@ -745,7 +749,7 @@ a {
 .variety-item .button,
 .product-price .button {
   padding-left: 19px;
-  padding-right: 16px;
+  padding-right: 17px;
 }
 
 .main-nav {
@@ -1033,6 +1037,9 @@ a {
 }
 
 .product-article {
+  min-width: 113px;
+  padding-left: 10px;
+
   color: #aeaeae;
 
   background-color: #f8f5f2;
